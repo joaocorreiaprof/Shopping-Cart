@@ -1,14 +1,16 @@
 import { Link, Outlet } from "react-router-dom";
-
+import "./App.css";
 const App = () => {
   return (
     <div>
       <header>
-        <h1>My Website</h1>
+        <h1>Freaky</h1>
+        <nav>
+          <Link to="/">Home</Link> |<Link to="/shop">Shop</Link> |
+          <Link to="/cart">Cart</Link>
+        </nav>
       </header>
-      <nav>
-        <Link to="/">Home</Link> | <Link to="/shop">Shop</Link>
-      </nav>
+
       <main>
         <Outlet />
       </main>
