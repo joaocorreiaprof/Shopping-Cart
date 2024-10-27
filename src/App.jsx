@@ -4,7 +4,7 @@ const App = () => {
   return (
     <div>
       <header>
-        <h1>Freaky</h1>
+        <h1 className="brand">Freaky</h1>
         <nav>
           <Link to="/">Home</Link> <Link to="/shop">Shop</Link>
           <Link to="/cart">Cart</Link>

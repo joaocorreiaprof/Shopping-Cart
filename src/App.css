@@ -22,10 +22,16 @@ main {
   background-color: white;
 }
 
+.brand {
+  margin-left: 15px;
+}
+
 nav {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-size: 18px;
+  margin-right: 15px;
 }
 
 nav a {

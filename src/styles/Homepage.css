@@ -1,12 +1,113 @@
-.main-content {
+/*Container one*/
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-one {
   display: flex;
   justify-content: space-between;
 }
 
-.first-text {
-  padding: 15%;
+.first-div {
+  padding: 10%;
+  font-family: "Playwrite GB S", "Playfair Display", Georgia, "Times New Roman",
+    serif;
 }
 
-img {
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+}
+
+.shop-button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.shop-button:hover {
+  background-color: #ff5a4d;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.shop-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image1,
+.image2 {
   height: 100vh;
+}
+
+.fit,
+.jewl {
+  height: 40vh;
+  border: 10px solid #f0f0f0;
+  border-radius: 15px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  background-color: #fff;
+  margin-right: 10px;
+}
+
+.fit:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+.first-images-display {
+  margin-top: 20px;
+}
+
+/*Container two*/
+
+.container-two {
+  display: flex;
+  flex-direction: row;
+}
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fdfdfd;
+  text-align: center;
+  font-family: "Georgia", serif;
+  max-width: 1000px;
+  margin: 0px auto;
+  border-radius: 12px;
+}
+
+.about-section h1 {
+  font-size: 3rem;
+  color: #ff6f61;
+  font-weight: 700;
+  margin-bottom: 25px;
+  font-family: "Playwrite GB S", "Playfair Display", Georgia, "Times New Roman",
+    serif;
+}
+
+.about-section p {
+  font-size: 1.3rem;
+  color: #5a4b3b;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-section p::first-letter {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #ff6f61;
 }
