@@ -1,6 +1,5 @@
 import image1 from "../assets/images/vertical-girl.jpg";
 import image2 from "../assets/images/vertical-men.jpg";
-import image3 from "../assets/images/vertical-menn.jpg";
 import fit1 from "../assets/images/fit1.jpg";
 import fit2 from "../assets/images/fit2.jpg";
 import fit3 from "../assets/images/fit3.jpg";
