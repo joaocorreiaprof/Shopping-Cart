@@ -6,11 +6,10 @@ const App = () => {
       <header>
         <h1>Freaky</h1>
         <nav>
-          <Link to="/">Home</Link> |<Link to="/shop">Shop</Link> |
+          <Link to="/">Home</Link> <Link to="/shop">Shop</Link>
           <Link to="/cart">Cart</Link>
         </nav>
       </header>
-
       <main>
         <Outlet />
       </main>
