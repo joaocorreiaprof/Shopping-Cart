@@ -7,11 +7,13 @@ const App = () => {
   return (
     <div>
       <header>
-        <h1 className="brand">Freaky</h1>
+        <Link to="/" className="freaky-link">
+          Freaky
+        </Link>
         <nav>
           <Link to="/">
             <House />
-          </Link>{" "}
+          </Link>
           <Link to="/shop">
             <Store />
           </Link>

@@ -1,0 +1,108 @@
+.shop-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.category-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 20px 0;
+}
+
+.category-selector label {
+  margin-right: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.category-selector select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-selector select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.6);
+  outline: none;
+}
+
+.category-selector select option {
+  padding: 8px;
+}
+
+.category-selector select:hover {
+  cursor: pointer;
+  background-color: #f1f1f1;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 20px; /* Space between product cards */
+  padding: 100px 50px; /* Padding around the entire grid */
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fff; /* White background for each product */
+  border: 1px solid #ddd; /* Subtle border around each product */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.product img {
+  width: 100%; /* Full width for responsive design */
+  max-width: 300px; /* Limit max width for consistency */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product p {
+  margin: 10px 0; /* Space between title and price */
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.product p:first-of-type {
+  font-weight: bold; /* Bold for the product title */
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #ff6f61; /* Primary color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}

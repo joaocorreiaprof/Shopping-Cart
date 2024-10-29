@@ -22,11 +22,14 @@ main {
   background-color: white;
 }
 
-.brand {
+.freaky-link {
   margin-left: 15px;
   font-family: "Playwrite GB S", "Playfair Display", Georgia, "Times New Roman",
     serif;
   font-size: 25px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 nav {
