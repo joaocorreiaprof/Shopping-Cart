@@ -61,8 +61,8 @@ const Shopping = () => {
         <label htmlFor="category">Choose a category:</label>
         <select id="category" onChange={(e) => setFilter(e.target.value)}>
           <option value="all">All Products</option>
-          <option value="men's clothing">Men's Clothes</option>
-          <option value="women's clothing">Women's Clothes</option>
+          <option value="men's clothing">Men&apos;s Clothes</option>
+          <option value="women's clothing">Women&apos;s Clothes</option>
           <option value="jewelery">Jewelry</option>
         </select>
       </div>
