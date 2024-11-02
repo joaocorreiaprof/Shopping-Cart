@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "../styles/Shop.css";
-
+import { useCart } from "./CartContext";
 const useProducts = () => {
   const [products, setProducts] = useState([]);
   const [error, setError] = useState(null);
@@ -28,7 +28,7 @@ const useProducts = () => {
 
 const Shopping = () => {
   const { products, error, loading } = useProducts();
-  const [cart, setCart] = useState([]);
+  const { addToCart } = useCart();
   const [quantities, setQuantities] = useState({});
   const [filter, setFilter] = useState("all");
 
@@ -37,14 +37,6 @@ const Shopping = () => {
       ...prevQuantities,
       [productId]: quantity,
     }));
-  };
-
-  const addToCart = (product) => {
-    const quantity = quantities[product.id] || 1;
-    setCart((prevCart) => [
-      ...prevCart,
-      { ...product, quantity: parseInt(quantity) },
-    ]);
   };
 
   const filteredProducts =
@@ -57,16 +49,7 @@ const Shopping = () => {
 
   return (
     <div className="shop-container">
-      <div className="category-selector">
-        <label htmlFor="category">Choose a category:</label>
-        <select id="category" onChange={(e) => setFilter(e.target.value)}>
-          <option value="all">All Products</option>
-          <option value="men's clothing">Men&apos;s Clothes</option>
-          <option value="women's clothing">Women&apos;s Clothes</option>
-          <option value="jewelery">Jewelry</option>
-        </select>
-      </div>
-
+      {/* Category Selector */}
       <div className="products">
         {filteredProducts.map((product) => (
           <div key={product.id} className="product">
@@ -84,7 +67,11 @@ const Shopping = () => {
               onChange={(e) => handleQuantityChange(product.id, e.target.value)}
               style={{ width: "50px", marginRight: "5px" }}
             />
-            <button onClick={() => addToCart(product)}>Add to Cart</button>
+            <button
+              onClick={() => addToCart(product, quantities[product.id] || 1)}
+            >
+              Add to Cart
+            </button>
           </div>
         ))}
       </div>
