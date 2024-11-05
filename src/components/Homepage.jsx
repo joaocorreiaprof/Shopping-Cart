@@ -26,7 +26,7 @@ const Homepage = () => {
           <div className="first-images-display">
             <img className="fit" src={fit1} alt="Image three" />
             <img className="fit" src={fit2} alt="Image three" />
-            <img className="fit" src={fit3} alt="Image three" />
+            <img className="fit picture3" src={fit3} alt="Image three" />
           </div>
         </div>
         <div className="first-img">
