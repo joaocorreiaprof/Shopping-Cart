@@ -48,10 +48,10 @@
 
 .products {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three columns */
-  gap: 20px; /* Space between product cards */
-  padding: 100px 50px; /* Padding around the entire grid */
-  background-color: #f9f9f9; /* Light background for contrast */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 100px 50px;
+  background-color: #f9f9f9;
 }
 
 .product {
@@ -60,28 +60,28 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background-color: #fff; /* White background for each product */
-  border: 1px solid #ddd; /* Subtle border around each product */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .product img {
-  width: 100%; /* Full width for responsive design */
-  max-width: 300px; /* Limit max width for consistency */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   border-radius: 8px;
   margin-bottom: 15px;
 }
 
 .product p {
-  margin: 10px 0; /* Space between title and price */
+  margin: 10px 0;
   font-size: 1.1rem;
   color: #333;
 }
 
 .product p:first-of-type {
-  font-weight: bold; /* Bold for the product title */
+  font-weight: bold;
 }
 
 input[type="number"] {
@@ -96,13 +96,69 @@ input[type="number"] {
 button {
   padding: 10px 15px;
   color: #fff;
-  background-color: #ff6f61; /* Primary color */
+  background-color: #ff6f61;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth hover effect */
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+  background-color: #0056b3;
+}
+
+/* Mobile View */
+@media (min-width: 320px) and (max-width: 480px) {
+  .shop-container {
+    margin-top: 10px;
+  }
+
+  .category-selector {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  .category-selector label {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+  }
+
+  .category-selector select {
+    width: 100%;
+    padding: 6px;
+    font-size: 0.9rem;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 20px 15px;
+  }
+
+  .product {
+    padding: 15px;
+  }
+
+  .product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .product p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  input[type="number"] {
+    width: 50px;
+    padding: 4px;
+    margin-right: 5px;
+  }
+
+  button {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
 }
