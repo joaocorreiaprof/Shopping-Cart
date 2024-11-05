@@ -111,3 +111,57 @@
   font-weight: bold;
   color: #ff6f61;
 }
+
+/*Mobile view*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .image1 {
+    height: 50vh;
+  }
+
+  .first-images-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fit {
+    width: 80%;
+    height: 40%;
+  }
+
+  .image1,
+  .image2 {
+    display: none;
+  }
+
+  .fit:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .about-text {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .shop-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .model1 {
+    height: 60vh;
+  }
+
+  .model2,
+  .model3 {
+    display: none;
+  }
+}

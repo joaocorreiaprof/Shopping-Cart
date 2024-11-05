@@ -39,7 +39,7 @@ const Homepage = () => {
         </div>
         <div className="about-section">
           <h1>About us</h1>
-          <p>
+          <p className="about-text">
             Welcome to Freaky, where fashion meets inclusivity and style knows
             no boundaries. We believe that clothing is more than just what you
             wear—it is a form of self-expression, a statement of individuality,
@@ -62,9 +62,9 @@ const Homepage = () => {
             </Link>
           </div>
           <div className="second-images-display">
-            <img className="fit" src={jewl1} alt="Model image" />
-            <img className="fit" src={jewl2} alt="Model image" />
-            <img className="fit" src={jewl3} alt="Model image" />
+            <img className="fit model1" src={jewl1} alt="Model image" />
+            <img className="fit model2" src={jewl2} alt="Model image" />
+            <img className="fit model3" src={jewl3} alt="Model image" />
           </div>
         </div>
       </div>

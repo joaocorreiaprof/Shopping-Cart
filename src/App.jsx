@@ -5,7 +5,7 @@ import { Store } from "lucide-react";
 import { ShoppingCart } from "lucide-react";
 const App = () => {
   return (
-    <div>
+    <div className="main-div">
       <header>
         <Link to="/" className="freaky-link">
           Freaky
